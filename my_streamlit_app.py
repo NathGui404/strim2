@@ -1,20 +1,23 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
 import pandas as pd
+import numpy as np
 import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+import plotly.express as px
 
 
 # radio button
 # first argument is the title of the radio button
 # second argument is the options for the ratio button
-status = st.radio("Quel est ton formateur préféré: ", ('Autre', 'Pierre'))
+st.title("Quel est ton formateur préféré: ")
+status = st.radio('Autre', 'Pierre')
 # conditional statement to print
 # Male if male is selected else print female
 # show the result using the success function
 if (status == 'Pierre'):    
-	st.success("Pierre Evidemment")
 	st.image(pierre_mur.jpg, width=200)
-	
 else:
     st.success("Est tu sûr de ton choix?")
 
