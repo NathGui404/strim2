@@ -5,7 +5,7 @@ import seaborn as sns
 
 st.title('On va voir des voitures')
 st.write("j'adore les voitures")
-
+st.image(img, width=200))
 link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
 df_cars = pd.read_csv(link)
 
