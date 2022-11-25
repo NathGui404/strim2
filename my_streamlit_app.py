@@ -12,14 +12,15 @@ import plotly.express as px
 # first argument is the title of the radio button
 # second argument is the options for the ratio button
 st.title("Quel est ton formateur préféré: ")
-status = st.radio('Autre', 'Pierre')
+status = st.radio(("Quel est ton formateur préféré: ",('Autre', 'Pierre'))
 # conditional statement to print
 # Male if male is selected else print female
 # show the result using the success function
 if (status == 'Pierre'):    
+	st.success("Est tu sûr de ton choix?")
 	st.image(pierre_mur.jpg, width=200)
-else:
-    st.success("Est tu sûr de ton choix?")
+	else:
+    	st.warning("Est tu sûr de ton choix?")
 
 st.title('Même si aucun rapport avec le début, on va étudier des correlations avec des voitures')
 st.write("j'adore les voitures")
