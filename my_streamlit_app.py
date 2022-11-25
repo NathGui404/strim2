@@ -7,7 +7,7 @@ import seaborn as sns
 # radio button
 # first argument is the title of the radio button
 # second argument is the options for the ratio button
-status = st.radio("Quel est ton formateur préféré: ", ('Pierre', 'Autre'))
+status = st.radio("Quel est ton formateur préféré: ", ('Autre', 'Pierre'))
 # conditional statement to print
 # Male if male is selected else print female
 # show the result using the success function
