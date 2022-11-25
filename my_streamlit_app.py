@@ -13,8 +13,8 @@ status = st.radio("Quel est ton formateur préféré: ", ('Pierre', 'Autre'))
 # conditional statement to print
 # Male if male is selected else print female
 # show the result using the success function
-if (status == 'Pierre'):
-    st.success("Pierre Evidemment")
+if (status == 'Pierre'):    
+	st.success("Pierre Evidemment")
 	st.image(pierre_mur.jpg, width=200)
 else:
     st.success("Est tu sûr de ton choix?")
