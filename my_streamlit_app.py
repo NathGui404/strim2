@@ -13,7 +13,7 @@ import plotly.express as px
 # second argument is the options for the ratio button
 st.title("Quel est ton formateur préféré: ")
 status =st.radio(
-    "Quel est ton formateur préféré?":,
+    "Quel est ton formateur préféré?",
     ('Autre','Pierre'))
 # conditional statement to print
 # show the result using the success function
