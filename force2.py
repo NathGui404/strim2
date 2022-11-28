@@ -16,10 +16,11 @@ st.sidebar.image('bugatti.jpg', caption='Bugatti')
 st.title('Toi tu aimes les voitures!')
 # data !
 link = 'https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv'
-df_auto = pd.read_csv(link)
+df_cars = pd.read_csv(link)
 
 # Selection continent
-continent_list = df_auto['continent'].unique()
+st.sidebar.write('Choisis bien ton continent !')
+continent_list = df_cars['continent'].unique()
 countries = st.sidebar.multiselect(
 	"Choix des continents", 
 	continent_list, 
@@ -27,20 +28,12 @@ countries = st.sidebar.multiselect(
 	)
 
 # Table 
-df_auto_continent = df_auto[df_auto['continent'].isin(countries)]
+df_cars_continent = df_cars[df_cars['continent'].isin(countries)]
 st.write('Caractéristiques voitures')
-df_auto_continent
+df_cars_continent
 
-
-
-
-
+st.write("Petite analyse des corrélations qui ne mange pas de pain...")
 st.write("Tu vas voir ce que tu vas voir !")
-
-link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
-
-
-st.write("Petite analyse des corrélations qui ne mange pas de pain")
 
 viz_correlation = sns.heatmap(df_cars.corr(), center=0, cmap = sns.color_palette("vlag", as_cmap=True), annot=True)
 
