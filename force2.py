@@ -47,7 +47,7 @@ fig = px.scatter(data_frame=df_cars,
                    y= "mpg", x="weightlbs",
                    color="continent",
                    )
-fig.update_layout(title ="bDistance parcourue en fonction du poids des véhiculesb",
+fig.update_layout(title ="Distance parcourue en fonction du poids des véhicules",
                    title_x = 0.5,
                    dragmode='select',
                    width=1300,
