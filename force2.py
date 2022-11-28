@@ -9,7 +9,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import plotly as plt
-
+import numpy as np
 
 
 st.title('Toi tu aimes les voitures!')
