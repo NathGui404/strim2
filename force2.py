@@ -8,7 +8,7 @@ Created on Sun Nov 27 15:31:18 2022
 import streamlit as st
 import pandas as pd
 import seaborn as sns
-import pillow as PIL
+
 
 
 st.title('Toi tu aimes les voitures!')
