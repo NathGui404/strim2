@@ -9,11 +9,11 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import pillow as PIL
-from PIL import Image
+
 
 st.title('Toi tu aimes les voitures!')
 
-image = Image.open('https://github.com/NathGui404/strim/blob/0a671af202beb8704005c256821ba22efe339ea7/bugatti.jpg')
+image='https://github.com/NathGui404/strim/blob/0a671af202beb8704005c256821ba22efe339ea7/bugatti.jpg'
 
 st.image(image, caption='Bugatti')
 st.write("Tu vas voir ce que tu vas voir !")
