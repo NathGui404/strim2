@@ -54,5 +54,5 @@ fig.update_layout(title ="bDistance parcourue en fonction du poids des véhicule
                    height=700,
                    hovermode='closest',
                    template='plotly_dark')
-st.plotly_chart(fig, config=config, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
 st.write("Plus la voiture est lourde, moins elle fait de miles!")
