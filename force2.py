@@ -8,7 +8,7 @@ Created on Sun Nov 27 15:31:18 2022
 import streamlit as st
 import pandas as pd
 import seaborn as sns
-impoty plotly as plt
+import plotly as plt
 
 
 
