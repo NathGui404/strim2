@@ -8,14 +8,12 @@ Created on Sun Nov 27 15:31:18 2022
 import streamlit as st
 import pandas as pd
 import seaborn as sns
+impoty plotly as plt
 
 
 
 st.title('Toi tu aimes les voitures!')
-
-image='https://github.com/NathGui404/strim/blob/0a671af202beb8704005c256821ba22efe339ea7/bugatti.jpg'
-
-st.image(image, caption='Bugatti')
+st.image('bugatti.jpg', caption='Bugatti')
 st.write("Tu vas voir ce que tu vas voir !")
 
 link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
@@ -40,11 +38,7 @@ else:
 
 
 
-viz_correlation = sns.heatmap(df_cars.corr(),
-								center=0,
-								cmap = sns.color_palette("vlag", as_cmap=True),
-                                annot=True
-								)
+viz_correlation = sns.heatmap(df_cars.corr(), center=0, cmap = sns.color_palette("vlag", as_cmap=True), annot=True)
 
 st.pyplot(viz_correlation.figure)
 
