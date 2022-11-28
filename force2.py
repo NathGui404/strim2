@@ -12,7 +12,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import plotly.express as px
 
-st.sidebar.image('bugatti.jpg', caption='Bugatti')
+st.sidebar.title('Ca parle de voitures')
+st.sidebar.image('bugatti.jpg')
 st.title('Toi tu aimes les voitures!')
 # data !
 link = 'https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv'
