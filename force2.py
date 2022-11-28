@@ -40,12 +40,12 @@ viz_correlation = sns.heatmap(df_cars.corr(), center=0, cmap = sns.color_palette
 st.pyplot(viz_correlation.figure)
 
 # graph 2
-# distance parcourue par gallon consommée - Plus la voiture est lourde, moins elle fait de miles
+
 
 fig = plt.figure(figsize=(12, 9))
 fig = px.scatter(data_frame=df_cars,
-                   y= "Miles per gallon_(mpg)", x="Weight_Lbs",
-                   color="Continent",
+                   y= "mpg", x="weightlbs",
+                   color="continent",
                    )
 fig.update_layout(title ="bDistance parcourue en fonction du poids des véhiculesb",
                    title_x = 0.5,
@@ -55,3 +55,4 @@ fig.update_layout(title ="bDistance parcourue en fonction du poids des véhicule
                    hovermode='closest',
                    template='plotly_dark')
 st.plotly_chart(fig, config=config, use_container_width=True)
+st.write("Plus la voiture est lourde, moins elle fait de miles!")
